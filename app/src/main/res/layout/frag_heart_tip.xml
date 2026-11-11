@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical"
+    android:background="@color/green_1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include xmlns:android="http://schemas.android.com/apk/res/android" layout="@layout/actionbar_green"/>
+    <ImageView
+        android:id="@+id/iv_dial_wear_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dial_wear_tip"
+        android:scaleType="fitCenter"
+        android:layout_centerVertical="true"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_below="@+id/iv_dial_wear_tip">
+        <TextView
+            android:textSize="14dp"
+            android:textColor="@color/white_80"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/heart_rate_test_tip2"/>
+        <TextView
+            android:textSize="14dp"
+            android:textColor="@color/white_80"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/heart_rate_test_tip3"/>
+    </LinearLayout>
+</RelativeLayout>

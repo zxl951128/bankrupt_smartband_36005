@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical"
+    android:background="@color/common_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include xmlns:android="http://schemas.android.com/apk/res/android" layout="@layout/part_actionbar"/>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/item_content_margin_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="@dimen/item_content_margin_horizontal"
+        android:weightSum="1">
+        <EditText
+            android:id="@+id/search_edit"
+            android:background="@null"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/weather_city_search"
+            android:layout_weight="1"
+            style="@style/CommonText"/>
+        <cn.ginshell.bong.ui.view.IconTextView
+            android:textSize="@dimen/icon_size"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_search"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/item_margin_left"
+        android:layout_marginRight="@dimen/item_margin_right"
+        android:layout_marginBottom="7dp"
+        style="@style/divider"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

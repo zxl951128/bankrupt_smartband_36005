@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:tag="layout/fragment_select_family_0"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/action_bar_common"
+        style="@style/CommonTitle.Green">
+        <cn.ginshell.bong.ui.view.IconTextView
+            android:id="@+id/title_left"
+            android:tag="binding_1"
+            style="@style/TitleLeft"/>
+        <cn.ginshell.bong.ui.view.IconTextView
+            android:textSize="@dimen/common_text_size"
+            android:id="@+id/title_right"
+            android:tag="binding_2"
+            android:visibility="visible"
+            android:text="@string/set_edit"
+            style="@style/TitleRight"/>
+        <TextView
+            android:id="@+id/title_center"
+            android:text="@string/family_list"
+            style="@style/TitleCenter"/>
+        <View
+            android:layout_alignParentBottom="true"
+            style="@style/DividerLine"/>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_below="@+id/action_bar_common"/>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_action"
+        android:tag="binding_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/add_button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        xmlns:ns1="http://schemas.android.com/apk/res-auto" 
+        ns1:backgroundTint="@color/red_1"
+        xmlns:ns2="http://schemas.android.com/apk/res-auto" 
+        ns2:fabSize="normal"
+        xmlns:ns3="http://schemas.android.com/apk/res-auto" 
+        ns3:rippleColor="@color/red_2"/>
+</RelativeLayout>

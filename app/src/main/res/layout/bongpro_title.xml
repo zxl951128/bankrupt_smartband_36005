@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:gravity="center_vertical"
+    android:id="@+id/bong_pro_title"
+    android:background="@color/pro_sport_state_bar_color"
+    style="@style/CommonTitle">
+    <cn.ginshell.bong.ui.view.IconTextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:textSize="@dimen/icon_size"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@+id/back"
+        android:paddingLeft="@dimen/bong_pro_common_padding"
+        android:paddingRight="@dimen/bong_pro_common_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/icon_back"
+        android:layout_alignParentLeft="true"/>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:textSize="@dimen/bong_pro_title_size"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@+id/pro_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sleep"/>
+        <TextView
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@+id/time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/default_time_period_value"/>
+    </LinearLayout>
+    <cn.ginshell.bong.ui.view.IconTextView
+        android:textSize="@dimen/icon_size"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@+id/more_action"
+        android:paddingLeft="@dimen/bong_pro_common_padding"
+        android:paddingTop="7dp"
+        android:paddingRight="@dimen/bong_pro_common_padding"
+        android:paddingBottom="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/icon_h_share"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

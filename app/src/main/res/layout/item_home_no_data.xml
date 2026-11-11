@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:id="@+id/ll_content"
+    android:tag="layout/item_home_no_data_0"
+    android:background="@drawable/pic_nodata"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp">
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/home_no_happen"/>
+    <TextView
+        android:textSize="15dp"
+        android:textColor="@color/green_2"
+        android:id="@+id/more_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-5dp"
+        android:text="@string/home_record_life"/>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BongTheme.Transparent" parent="@style/AppTheme">
+        <item name="android:textColorSecondary">@color/black_bg_60</item>
+        <item name="android:textColorPrimaryInverse">@color/green_1</item>
+        <item name="android:textColorSecondaryInverse">@color/green_1</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+</resources>

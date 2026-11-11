@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@+id/item"
+    android:background="@color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/green_1"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/share_friend"
+            android:layout_centerVertical="true"/>
+        <cn.ginshell.bong.ui.view.IconTextView
+            android:textSize="14dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/icon_down"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:textSize="15dp"
+            android:textColor="@color/green_1"
+            android:id="@+id/tv_share"
+            android:background="@drawable/selector_white_to_black_light"
+            android:paddingLeft="18dp"
+            android:paddingTop="6dp"
+            android:paddingRight="18dp"
+            android:paddingBottom="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:text="@string/share_btn_text"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

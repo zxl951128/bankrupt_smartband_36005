@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:tag="layout/adorn_illutration_view_0"
+    android:background="@color/purple_action_bar_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@+id/adorn_illustration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/adorn_illustration"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+    <cn.ginshell.bong.ui.view.IconTextView
+        android:textSize="150sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/icon_adorn_1"
+        android:layout_above="@+id/illustration"
+        android:layout_below="@+id/adorn_illustration"/>
+    <TextView
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@+id/illustration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="50dp"
+        android:text="整理前额头发，将电极（两片黑色皮革）紧贴眉毛以上的皮肤。"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

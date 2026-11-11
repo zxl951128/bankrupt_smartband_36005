@@ -1,0 +1,107 @@
+package com.tencent.bugly.legu.proguard;
+
+import java.util.HashMap;
+import java.util.Map;
+
+/* JADX INFO: compiled from: BUGLY */
+/* JADX INFO: loaded from: classes.dex */
+public final class f extends j {
+    private static byte[] k;
+    private static Map<String, String> l;
+    private static /* synthetic */ boolean m;
+    public byte[] e;
+    private Map<String, String> i;
+    private Map<String, String> j;
+    public short a = 0;
+    private byte f = 0;
+    private int g = 0;
+    public int b = 0;
+    public String c = null;
+    public String d = null;
+    private int h = 0;
+
+    static {
+        m = !f.class.desiredAssertionStatus();
+        k = null;
+        l = null;
+    }
+
+    public final boolean equals(Object o) {
+        f fVar = (f) o;
+        return k.a(1, (int) fVar.a) && k.a(1, (int) fVar.f) && k.a(1, fVar.g) && k.a(1, fVar.b) && k.a((Object) 1, (Object) fVar.c) && k.a((Object) 1, (Object) fVar.d) && k.a((Object) 1, (Object) fVar.e) && k.a(1, fVar.h) && k.a((Object) 1, (Object) fVar.i) && k.a((Object) 1, (Object) fVar.j);
+    }
+
+    public final Object clone() {
+        try {
+            return super.clone();
+        } catch (CloneNotSupportedException e) {
+            if (m) {
+                return null;
+            }
+            throw new AssertionError();
+        }
+    }
+
+    @Override // com.tencent.bugly.legu.proguard.j
+    public final void a(i iVar) {
+        iVar.a(this.a, 1);
+        iVar.a(this.f, 2);
+        iVar.a(this.g, 3);
+        iVar.a(this.b, 4);
+        iVar.a(this.c, 5);
+        iVar.a(this.d, 6);
+        iVar.a(this.e, 7);
+        iVar.a(this.h, 8);
+        iVar.a((Map) this.i, 9);
+        iVar.a((Map) this.j, 10);
+    }
+
+    @Override // com.tencent.bugly.legu.proguard.j
+    public final void a(h hVar) {
+        try {
+            this.a = hVar.a(this.a, 1, true);
+            this.f = hVar.a(this.f, 2, true);
+            this.g = hVar.a(this.g, 3, true);
+            this.b = hVar.a(this.b, 4, true);
+            this.c = hVar.b(5, true);
+            this.d = hVar.b(6, true);
+            if (k == null) {
+                k = new byte[]{0};
+            }
+            byte[] bArr = k;
+            this.e = hVar.c(7, true);
+            this.h = hVar.a(this.h, 8, true);
+            if (l == null) {
+                HashMap map = new HashMap();
+                l = map;
+                map.put("", "");
+            }
+            this.i = (Map) hVar.a(l, 9, true);
+            if (l == null) {
+                HashMap map2 = new HashMap();
+                l = map2;
+                map2.put("", "");
+            }
+            this.j = (Map) hVar.a(l, 10, true);
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("RequestPacket decode error " + e.a(this.e));
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Override // com.tencent.bugly.legu.proguard.j
+    public final void a(StringBuilder sb, int i) {
+        com.tencent.bugly.legu.crashreport.crash.jni.b bVar = new com.tencent.bugly.legu.crashreport.crash.jni.b(sb, i);
+        bVar.a(this.a, "iVersion");
+        bVar.a(this.f, "cPacketType");
+        bVar.a(this.g, "iMessageType");
+        bVar.a(this.b, "iRequestId");
+        bVar.a(this.c, "sServantName");
+        bVar.a(this.d, "sFuncName");
+        bVar.a(this.e, "sBuffer");
+        bVar.a(this.h, "iTimeout");
+        bVar.a((Map) this.i, "context");
+        bVar.a((Map) this.j, "status");
+    }
+}

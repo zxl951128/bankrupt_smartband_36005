@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical"
+    android:background="@drawable/round_white_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:textSize="@dimen/item_icon_text_size"
+        android:textColor="@color/black"
+        android:id="@+id/tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/unbind_old_tip"/>
+    <View
+        android:background="@color/white_c"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:textSize="@dimen/common_text_size"
+        android:textColor="@color/color_appmark_good"
+        android:gravity="center"
+        android:id="@+id/unbind"
+        android:background="@drawable/selector_btn_normal"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/unbind_device"/>
+    <View
+        android:background="@color/white_9"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+        android:textSize="@dimen/common_text_size"
+        android:textColor="@color/color_appmark_n_fore"
+        android:gravity="center"
+        android:id="@+id/cancel"
+        android:background="@drawable/selector_btn_normal"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"/>
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:tag="layout/fragment_group_position_0"
+    android:background="@color/white_f2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/top_view"
+        android:background="@color/green_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/status_height"/>
+    <RelativeLayout
+        android:id="@+id/action_bar_common"
+        style="@style/CommonTitle.Green">
+        <cn.ginshell.bong.ui.view.IconTextView
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:tag="binding_1"
+            android:background="@drawable/selector_btn_normal"
+            android:layout_width="@dimen/common_title_width"
+            android:layout_height="match_parent"
+            android:text="@string/icon_back"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/group_position"
+            android:layout_centerInParent="true"
+            style="@style/CommonText"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/result"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+        <View style="@style/DividerLine"/>
+        <TextView
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:id="@+id/error_tip"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginLeft="15dp"
+            android:text="@string/group_location_error_tip"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <View style="@style/DividerLine"/>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.wang.avi.AVLoadingIndicatorView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            xmlns:ns1="http://schemas.android.com/apk/res-auto" 
+            ns1:indicatorColor="@color/green_1"
+            xmlns:ns2="http://schemas.android.com/apk/res-auto" 
+            ns2:indicatorName="BallSpinFadeLoaderIndicator"/>
+    </LinearLayout>
+</LinearLayout>

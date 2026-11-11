@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@+id/item_ring"
+    android:tag="layout/item_alarm_ring_0"
+    android:background="@drawable/selector_btn_purple"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_item_height">
+    <View xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/line_top"
+        android:background="@color/user_item_line"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentTop="true"/>
+    <TextView
+        android:id="@+id/tv_alarm_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/back_music_img"
+        android:layout_centerVertical="true"
+        style="@style/CommonText.ItemPurple"/>
+    <cn.ginshell.bong.ui.view.IconTextView
+        android:textSize="22dp"
+        android:textColor="@color/green_2"
+        android:gravity="center"
+        android:id="@+id/icon_alarm_selected"
+        android:visibility="gone"
+        android:text="@string/icon_finish"
+        android:layout_alignParentRight="true"
+        style="@style/ItemIcon"/>
+    <View
+        android:id="@+id/line"
+        android:background="@color/user_item_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="18dp"
+        android:layout_alignParentBottom="true"/>
+    <View
+        android:id="@+id/line_bottom"
+        android:background="@color/user_item_line"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

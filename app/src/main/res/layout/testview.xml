@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/textView7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        xmlns:ns1="http://schemas.android.com/apk/res-auto" 
+        ns1:layout_constraintLeft_toLeftOf="@+id/guideline"/>
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginStart="8dp"
+        xmlns:ns2="http://schemas.android.com/apk/res-auto" 
+        ns2:layout_constraintLeft_toRightOf="@+id/textView7"/>
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginEnd="16dp"
+        xmlns:ns3="http://schemas.android.com/apk/res-auto" 
+        ns3:layout_constraintLeft_toRightOf="@+id/textView8"
+        xmlns:ns4="http://schemas.android.com/apk/res-auto" 
+        ns4:layout_constraintRight_toRightOf="parent"/>
+    <android.support.constraint.Guideline
+        android:orientation="vertical"
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        xmlns:ns5="http://schemas.android.com/apk/res-auto" 
+        ns5:layout_constraintGuide_begin="67dp"/>
+</android.support.constraint.ConstraintLayout>

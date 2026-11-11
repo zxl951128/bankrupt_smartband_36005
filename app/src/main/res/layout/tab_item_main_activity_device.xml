@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <cn.ginshell.bong.ui.view.IconTextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:textSize="22dp"
+        android:id="@+id/tab_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:id="@+id/charging_icon"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-13dp"
+        android:layout_marginBottom="2dp"
+        android:src="@drawable/charge"
+        android:layout_toRightOf="@+id/tab_icon"
+        android:layout_alignBottom="@+id/tab_icon"/>
+    <TextView
+        android:textSize="7dp"
+        android:textColor="@color/white"
+        android:id="@+id/new_tip"
+        android:background="@drawable/round_red_bg"
+        android:padding="1dp"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-15dp"
+        android:layout_marginTop="3dp"
+        android:text="NEW"
+        android:layout_toRightOf="@+id/tab_icon"
+        android:layout_alignTop="@+id/tab_icon"/>
+    <TextView
+        android:textSize="10dp"
+        android:textColor="@color/white"
+        android:id="@+id/tab_string"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tab_device"
+        android:layout_below="@+id/tab_icon"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

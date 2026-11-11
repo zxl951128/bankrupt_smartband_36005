@@ -1,0 +1,9 @@
+package com.tencent.bugly.lejiagu.crashreport;
+
+/* JADX INFO: compiled from: BUGLY */
+/* JADX INFO: loaded from: classes.dex */
+public class BuglyHintException extends RuntimeException {
+    public BuglyHintException(String str) {
+        super(str);
+    }
+}

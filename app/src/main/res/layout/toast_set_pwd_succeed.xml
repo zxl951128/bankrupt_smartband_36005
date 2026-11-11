@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/round_white_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="250dp">
+    <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/pwd_successful"/>
+    <TextView
+        android:textSize="@dimen/common_text_size"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="@string/change_pwd_success"/>
+</LinearLayout>

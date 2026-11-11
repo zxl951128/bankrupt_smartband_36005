@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical"
+    android:tag="layout/fragment_msg_dialog_0"
+    android:background="@drawable/round_white_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:textSize="@dimen/common_text_size"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@+id/message"
+        android:padding="@dimen/common_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+    <View
+        android:background="@color/white_c"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+        <TextView
+            android:textSize="18dp"
+            android:textColor="@color/black_bg_60"
+            android:gravity="center"
+            android:id="@+id/cancel"
+            android:tag="binding_1"
+            android:background="@drawable/selector_btn_normal"
+            android:padding="10dp"
+            android:clickable="true"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/not_for_now"
+            android:layout_weight="1"/>
+        <View
+            android:background="@color/white_c"
+            android:layout_width="1px"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:textSize="18dp"
+            android:textColor="@color/green_1"
+            android:gravity="center"
+            android:id="@+id/confirm"
+            android:tag="binding_2"
+            android:background="@drawable/selector_btn_normal"
+            android:padding="10dp"
+            android:clickable="true"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/add_family"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

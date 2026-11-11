@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@+id/parent"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/bongpro_title"/>
+        <cn.ginshell.bong.ui.view.ProScrollView
+            android:id="@+id/scroll_pro"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+            <LinearLayout
+                android:orientation="vertical"
+                android:descendantFocusability="blocksDescendants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include
+                    android:id="@+id/part_sport_data"
+                    layout="@layout/part_sport_data"/>
+                <include layout="@layout/part_sport_pro_data"/>
+                <include layout="@layout/part_run_train"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/ll_chart_parent"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <FrameLayout
+                                android:id="@+id/chart_content"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentTop="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <include layout="@layout/bongpro_tip_new"/>
+                </LinearLayout>
+                <include
+                    android:visibility="gone"
+                    layout="@layout/bongpro_load_failure"/>
+            </LinearLayout>
+        </cn.ginshell.bong.ui.view.ProScrollView>
+    </LinearLayout>
+</LinearLayout>

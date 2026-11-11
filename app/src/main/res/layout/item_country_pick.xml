@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/item_margin_right"
+        android:layout_marginRight="@dimen/item_margin_left"
+        style="@style/divider"/>
+    <LinearLayout
+        android:paddingLeft="@dimen/item_content_margin_horizontal"
+        android:paddingTop="@dimen/item_content_margin_vertical"
+        android:paddingRight="@dimen/item_content_margin_horizontal"
+        android:paddingBottom="@dimen/item_content_margin_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+        <TextView
+            android:textSize="@dimen/common_text_size"
+            android:textColor="@color/white"
+            android:id="@+id/country_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/china"
+            android:layout_weight="1"/>
+        <TextView
+            android:textSize="@dimen/common_text_size"
+            android:textColor="@color/white"
+            android:id="@+id/country_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_country_code"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:id="@+id/bg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="14dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:src="@drawable/sport_steps"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="13dp">
+        <TextView
+            android:textSize="9dp"
+            android:textColor="@color/green_3"
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="09:00-09.59"/>
+        <TextView
+            android:textSize="11dp"
+            android:textColor="@color/green_3"
+            android:id="@+id/tv_steps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-4dp"
+            android:text="步数:1234步"/>
+    </LinearLayout>
+</LinearLayout>

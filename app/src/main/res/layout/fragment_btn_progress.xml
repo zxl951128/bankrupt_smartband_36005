@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:tag="layout/fragment_btn_progress_0"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:textSize="@dimen/fit_tip_size"
+        android:textColor="@color/white"
+        android:textColorLink="@color/white"
+        android:gravity="center"
+        android:id="@+id/statement"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_horizontal_margin"
+        android:layout_marginRight="@dimen/common_horizontal_margin"
+        android:text="@string/register_tip"
+        android:layout_marginStart="@dimen/common_horizontal_margin"
+        android:layout_marginEnd="@dimen/common_horizontal_margin"
+        xmlns:ns1="http://schemas.android.com/apk/res-auto" 
+        ns1:layout_constraintLeft_toLeftOf="parent"
+        xmlns:ns2="http://schemas.android.com/apk/res-auto" 
+        ns2:layout_constraintRight_toRightOf="parent"
+        xmlns:ns3="http://schemas.android.com/apk/res-auto" 
+        ns3:layout_constraintTop_toTopOf="parent"/>
+    <android.support.v7.widget.AppCompatButton
+        android:gravity="center"
+        android:id="@+id/btn_action"
+        android:clickable="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/set_login"
+        xmlns:ns4="http://schemas.android.com/apk/res-auto" 
+        ns4:layout_constraintTop_toBottomOf="@+id/statement"
+        style="@style/ConstrainNextBtn"/>
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:visibility="invisible"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginRight="15dp"
+        android:indeterminateDrawable="@drawable/circle_progressbar_bg"
+        android:indeterminateDuration="900"
+        android:layout_marginEnd="15dp"
+        xmlns:ns5="http://schemas.android.com/apk/res-auto" 
+        ns5:layout_constraintBottom_toBottomOf="@+id/btn_action"
+        xmlns:ns6="http://schemas.android.com/apk/res-auto" 
+        ns6:layout_constraintRight_toRightOf="@+id/btn_action"
+        xmlns:ns7="http://schemas.android.com/apk/res-auto" 
+        ns7:layout_constraintTop_toTopOf="@+id/btn_action"/>
+</android.support.constraint.ConstraintLayout>

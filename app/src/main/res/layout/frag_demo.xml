@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:id="@+id/ll_common"
+        android:background="@color/green_1"
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+        <TextView
+            android:textSize="16dp"
+            android:textColor="@color/selector_text_normal"
+            android:gravity="center"
+            android:id="@+id/title_left"
+            android:background="@drawable/selector_btn_normal"
+            android:visibility="visible"
+            android:layout_width="@dimen/title_btn_width"
+            android:layout_height="match_parent"
+            android:text="@string/cancel"/>
+        <TextView
+            android:textSize="16dp"
+            android:textColor="@color/selector_text_normal"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/fit_new_account"
+            android:lines="1"
+            android:layout_weight="1"
+            style="@style/CommonText"/>
+        <TextView
+            android:textSize="16dp"
+            android:textColor="@color/selector_text_normal"
+            android:gravity="center"
+            android:background="@drawable/selector_btn_normal"
+            android:visibility="invisible"
+            android:layout_width="@dimen/title_btn_width"
+            android:layout_height="match_parent"
+            android:text="@string/fit_edit"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/btn_add"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="25dp"
+        android:text="@string/fit_next"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        style="@style/BorderButtonGreen"/>
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/watch_img"
+        android:background="@drawable/watch_bg"
+        android:padding="3dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+    <View
+        android:id="@+id/cover"
+        android:background="@color/black_50"
+        android:visibility="visible"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:layout_alignLeft="@+id/watch_img"
+        android:layout_alignTop="@+id/watch_img"
+        android:layout_alignRight="@+id/watch_img"
+        android:layout_alignBottom="@+id/watch_img"/>
+    <ImageView
+        android:id="@+id/current"
+        android:visibility="invisible"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="-4dp"
+        android:layout_marginRight="-4dp"
+        android:src="@drawable/watch_cuttent"
+        android:layout_alignTop="@+id/watch_img"
+        android:layout_alignRight="@+id/watch_img"/>
+    <cn.ginshell.bong.ui.view.WatchLoading
+        android:id="@+id/loading"
+        android:visibility="invisible"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="-4dp"
+        android:layout_marginRight="-4dp"
+        android:layout_alignTop="@+id/watch_img"
+        android:layout_alignRight="@+id/watch_img"/>
+    <TextView
+        android:id="@+id/plate_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/watch_img"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

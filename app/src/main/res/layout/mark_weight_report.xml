@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:id="@+id/bg"
+    android:background="@color/arc_color"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true">
+    <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:src="@drawable/icon_weight_blue"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="13dp">
+        <TextView
+            android:textSize="8dp"
+            android:textColor="@color/blue"
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="09:00"/>
+        <TextView
+            android:textSize="11dp"
+            android:textColor="@color/blue"
+            android:id="@+id/tv_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-3dp"/>
+    </LinearLayout>
+</LinearLayout>

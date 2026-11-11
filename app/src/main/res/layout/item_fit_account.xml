@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="@dimen/family_view_width"
+            android:layout_height="@dimen/family_view_width"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:id="@+id/account_img"
+                android:background="@drawable/circle_red_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="MD"/>
+            <ImageView
+                android:layout_gravity="bottom|right"
+                android:id="@+id/select_indicator"
+                android:visibility="gone"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:src="@drawable/family_checked"/>
+        </FrameLayout>
+        <TextView
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:ellipsize="start"
+            android:id="@+id/account_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="MD你好"
+            android:maxLines="1"/>
+    </LinearLayout>
+    <Button
+        android:textSize="12dp"
+        android:textColor="@color/white"
+        android:id="@+id/del_btn"
+        android:background="@drawable/selector_red"
+        android:layout_width="@dimen/family_view_width"
+        android:layout_height="22dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/delete"/>
+</LinearLayout>

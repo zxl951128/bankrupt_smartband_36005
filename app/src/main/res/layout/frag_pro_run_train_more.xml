@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical"
+    android:tag="layout/frag_pro_run_train_more_0"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/action_bar_common"
+        android:background="@color/white"
+        style="@style/CommonTitle.Green">
+        <cn.ginshell.bong.ui.view.IconTextView
+            android:textColor="@color/pro_sport_state_bar_color"
+            android:id="@+id/title_left"
+            android:tag="binding_1"
+            style="@style/TitleLeft"/>
+        <cn.ginshell.bong.ui.view.IconTextView
+            android:id="@+id/title_right"
+            style="@style/TitleRight"/>
+        <TextView
+            android:textColor="@color/pro_sport_state_bar_color"
+            android:id="@+id/title_center"
+            android:text="@string/run_train_pro_section"
+            style="@style/TitleCenter"/>
+        <View
+            android:layout_alignParentBottom="true"
+            style="@style/DividerLine"/>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/run_train_more_recycler"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

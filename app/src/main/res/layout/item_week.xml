@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="42dp">
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/week_text"
+        android:layout_marginLeft="20dp"
+        android:text="@string/week_sun"
+        android:layout_centerVertical="true"
+        style="@style/WeekItemText"/>
+    <android.support.v7.widget.AppCompatCheckBox
+        android:theme="@style/MyCheckBox"
+        android:id="@+id/checkbox"
+        android:duplicateParentState="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+    <View
+        android:id="@+id/divider"
+        android:background="#cccccc"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

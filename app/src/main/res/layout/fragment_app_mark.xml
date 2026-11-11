@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical"
+    android:background="@drawable/round_white_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:textSize="@dimen/title_size"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:text="@string/app_mark_title"
+        style="@style/AppMarkTextView"/>
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/good"
+        android:background="@drawable/rect_appmark_good"
+        android:clickable="true"
+        android:text="@string/app_mark_good"
+        style="@style/AppMarkTextView"/>
+    <TextView
+        android:textColor="@color/color_appmark_bad"
+        android:id="@+id/bad"
+        android:background="@drawable/stroke_appmark_bad"
+        android:clickable="true"
+        android:text="@string/app_mark_bad"
+        style="@style/AppMarkTextView"/>
+    <TextView
+        android:textColor="@color/color_appmark_n_fore"
+        android:id="@+id/not_sure"
+        android:background="@drawable/stroke_appmark_n_bg"
+        android:clickable="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/app_mark_not_sure"
+        style="@style/AppMarkTextView"/>
+</LinearLayout>

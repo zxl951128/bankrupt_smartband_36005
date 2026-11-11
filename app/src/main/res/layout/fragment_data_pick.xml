@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:background="#f7f7f7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/date_bar"
+            android:background="@color/white"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_title_height">
+            <cn.ginshell.bong.ui.view.IconTextView
+                android:textColor="@color/green_2"
+                android:id="@+id/title_left"
+                android:text="@string/icon_down"
+                android:layout_centerVertical="true"
+                style="@style/TitleLeft"/>
+            <TextView
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:id="@+id/date_bar_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:textSize="16dp"
+                android:textColor="@color/green_2"
+                android:id="@+id/tv_go_today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="@string/go_today"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <View
+            android:id="@+id/empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

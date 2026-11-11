@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@+id/root_view"
+    android:background="@color/black_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/actionbar_common"/>
+        <View
+            android:background="@color/split_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+        <RelativeLayout
+            android:background="@drawable/watch_gradient_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <cn.ginshell.bong.ui.view.LoadingImageView
+                android:id="@+id/watch_preview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/clock_default"
+                android:layout_centerInParent="true"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/device_bw"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</FrameLayout>

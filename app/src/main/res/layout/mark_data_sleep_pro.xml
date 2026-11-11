@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:id="@+id/bg"
+    android:background="@color/black"
+    android:layout_width="wrap_content"
+    android:layout_height="32dp">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/ll_contain"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+        <TextView
+            android:textSize="11dp"
+            android:textColor="@color/white"
+            android:id="@+id/tv_sleep_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="09:00-09.59"/>
+        <TextView
+            android:textSize="9dp"
+            android:textColor="@color/white"
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="深睡"/>
+    </LinearLayout>
+</LinearLayout>

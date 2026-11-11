@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black"
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="connection"/>
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black"
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="request send"/>
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black"
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mac"/>
+        <Button
+            android:id="@+id/db_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Db Test"/>
+        <Button
+            android:id="@+id/nps_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NPS Test"/>
+        <Button
+            android:id="@+id/get_share_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Share Pic"/>
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Decode"/>
+        <Button
+            android:id="@+id/change_dial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Dial"
+            style="@style/TestButton"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/mock_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mock Sport Data"/>
+            <Button
+                android:id="@+id/remove_mock_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="remove Mock Data"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/log_db"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log db"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Request Mac"/>
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Request Sport Data"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Firmware"/>
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose File"/>
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restart Bong"/>
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Device Info"/>
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Screen on"/>
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UpLoad Font"/>
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Weather"/>
+        <Button
+            android:id="@+id/progress_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Progress Dialog"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Received Package:"/>
+                <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/received_package"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Start"/>
+                <EditText
+                    android:textColor="@color/black"
+                    android:id="@+id/start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@android:style/Widget.Holo.EditText"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="End"/>
+                <EditText
+                    android:textColor="@color/black"
+                    android:id="@+id/end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@android:style/Widget.Holo.EditText"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/read_flash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Read Flash"/>
+                <Button
+                    android:id="@+id/share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Share"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

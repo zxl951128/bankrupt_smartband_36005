@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:background="@drawable/selector_set_item_light_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/iv_zoom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/user_img_default"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/app_name"/>
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/iv_zoom_blur"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/user_img_default"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/app_name"
+        android:translationZ="2dp"/>
+</RelativeLayout>

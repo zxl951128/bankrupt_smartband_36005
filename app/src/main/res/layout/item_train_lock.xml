@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="55dp"
+    android:layout_height="40dp">
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@+id/circle_time"
+        android:background="@drawable/run_train_gray_circle"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:gravity="center"
+        android:id="@+id/small_circle"
+        android:background="@drawable/run_train_gray_small_circle"
+        android:visibility="invisible"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="10dp"/>
+</LinearLayout>

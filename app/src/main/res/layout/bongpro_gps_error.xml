@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/gps_layout_map">
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:textSize="@dimen/title_size"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sync_data_failure"/>
+    <TextView
+        android:textSize="@dimen/text_common_tip_size"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:text="@string/sync_to_get_data"/>
+</LinearLayout>

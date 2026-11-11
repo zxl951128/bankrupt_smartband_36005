@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:textSize="9dp"
+    android:textColor="@color/blue"
+    android:gravity="center"
+    android:id="@+id/tv_bfp"
+    android:background="@drawable/round_white_bg2"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:layout_width="wrap_content"
+    android:layout_height="16dp"/>

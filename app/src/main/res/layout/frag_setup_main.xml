@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include xmlns:android="http://schemas.android.com/apk/res/android" layout="@layout/actionbar_setup"/>
+    <FrameLayout
+        android:id="@+id/sub_contain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

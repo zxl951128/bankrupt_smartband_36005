@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.ginshell.bong.group.view.TagView
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:textSize="15dp"
+    android:textColor="@color/selector_green_white"
+    android:background="@drawable/tag_view_bg"
+    android:paddingLeft="20dp"
+    android:paddingTop="2dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="2dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minHeight="0dp"/>

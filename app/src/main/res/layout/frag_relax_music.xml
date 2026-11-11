@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical"
+    android:tag="layout/frag_relax_music_0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relax_recycler_view"
+        android:background="@color/white_f7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

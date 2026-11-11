@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.ginshell.bong.ui.view.IconTextView
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:textSize="30dp"
+    android:textColor="@color/white"
+    android:gravity="center"
+    android:background="@drawable/circle_red1_bg"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:text="@string/icon_h_run"/>

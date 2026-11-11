@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@+id/main_content"
+    android:tag="layout/fragment_home_0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <cn.ginshell.bong.ui.home.HomeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/home_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <cn.ginshell.bong.ui.home.SummaryLayout
+            android:id="@+id/summary_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:background="#f7f7f7"
+            android:paddingBottom="40dp"
+            android:clipToPadding="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </cn.ginshell.bong.ui.home.HomeLayout>
+</RelativeLayout>

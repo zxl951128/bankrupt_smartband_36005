@@ -1,0 +1,44 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+	namespace "cn.ginshell.bong"
+    compileSdkVersion 22
+
+    defaultConfig {
+        applicationId 'cn.ginshell.bong'
+        minSdkVersion 18
+        //noinspection ExpiringTargetSdkVersion,ExpiredTargetSdkVersion
+        targetSdkVersion 22
+        versionCode 36005
+        versionName "3.6.0"
+        vectorDrawables.useSupportLibrary = true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    buildFeatures {
+        buildConfig = false
+    }
+}
+
+dependencies {
+    // TODO: dependencies
+}

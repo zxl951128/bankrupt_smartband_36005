@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:background="@color/white"
+    android:paddingLeft="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="92dp">
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:textSize="19dp"
+        android:textColor="#ff9703"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/share_footer_download"/>
+    <TextView
+        android:textSize="12dp"
+        android:textColor="#333333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:text="长按识别图中二维码"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"/>
+    <ImageView
+        android:id="@+id/bong_icon"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/appicon"
+        android:layout_toLeftOf="@+id/iv_two_dimen"/>
+    <ImageView
+        android:id="@+id/iv_two_dimen"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="12dp"
+        android:src="@drawable/two_dimension"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

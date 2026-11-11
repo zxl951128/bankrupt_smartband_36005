@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical"
+    android:tag="layout/fragment_group_search_0"
+    android:background="@color/white_f2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:textSize="14dp"
+            android:textColor="@color/white_3"
+            android:textColorHint="@color/white_6"
+            android:gravity="start|center_vertical"
+            android:id="@+id/et_search"
+            android:background="@color/white_f0"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/group_search_id"
+            android:lines="1"
+            android:drawableLeft="@drawable/img_search"
+            android:drawablePadding="5dp"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:imeOptions="actionSearch"
+            android:textCursorDrawable="@null"/>
+        <TextView
+            android:textColor="@color/green_1"
+            android:gravity="center"
+            android:id="@+id/cancel"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/cancel"/>
+    </LinearLayout>
+    <View style="@style/DividerLine"/>
+    <TextView
+        android:textSize="15dp"
+        android:gravity="center"
+        android:id="@+id/no_result"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/group_search_no"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/search_result"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+        <View style="@style/DividerLine"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/search_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

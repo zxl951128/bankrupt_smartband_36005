@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/step_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="步数详情 "
+                style="@style/TestButton"/>
+            <Button
+                android:id="@+id/heart_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="心率详情"
+                style="@style/TestButton"/>
+            <Button
+                android:id="@+id/sport_heart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="获取block"
+                style="@style/TestButton"/>
+            <Button
+                android:id="@+id/clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clear"
+                style="@style/TestButton"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/content"
+            android:background="@color/heart_bg_bottom"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="内容："/>
+    </LinearLayout>
+</ScrollView>

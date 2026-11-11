@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <cn.ginshell.bong.ui.view.RoundCheckViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/chart_selector"
+        android:layout_width="@dimen/switch_button_width"
+        android:layout_height="@dimen/switch_button_height"
+        android:layout_marginTop="8dp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/energy_chart"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/heart_rate_chart"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/steps_chart"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+    <RelativeLayout
+        android:id="@+id/time_span"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="9dp"
+            android:textColor="@color/black"
+            android:id="@+id/start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/default_time_value"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:textSize="9dp"
+            android:textColor="@color/black"
+            android:id="@+id/end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:text="@string/default_time_value"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>

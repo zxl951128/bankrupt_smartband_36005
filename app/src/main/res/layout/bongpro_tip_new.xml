@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="horizontal"
+    android:id="@+id/bong_pro_bottom"
+    android:tag="layout/bongpro_tip_new_0"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentTop="true"/>
+    <LinearLayout
+        android:id="@+id/ll_icon"
+        android:background="@color/train_achieve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <cn.ginshell.bong.ui.view.IconTextView
+            android:textSize="32dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/icon_tips"/>
+    </LinearLayout>
+    <TextView
+        android:textSize="12dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:id="@+id/tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/ll_icon"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

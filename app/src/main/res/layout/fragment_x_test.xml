@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/new_connect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Connect"
+                style="@style/TestButton"/>
+            <Button
+                android:id="@+id/new_disconnect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Disconnect"
+                style="@style/TestButton"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/run_trainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="读取跑步训练DB Data"
+            style="@style/TestButton"/>
+        <Button
+            android:id="@+id/app_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="APP MARK"
+            style="@style/TestButton"/>
+        <Button
+            android:id="@+id/app_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="App Update"
+            style="@style/TestButton"/>
+        <Button
+            android:id="@+id/set_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Version"
+            style="@style/TestButton"/>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/body_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Body Test"
+                style="@style/TestButton"/>
+            <EditText
+                android:textColor="@color/white"
+                android:id="@+id/test_type"
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="0"
+                android:inputType="number"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear Nps"
+            style="@style/TestButton"/>
+        <Button
+            android:id="@+id/disconnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Disconnect"
+            style="@style/TestButton"/>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/dfu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dfu"
+                style="@style/TestButton"/>
+            <ProgressBar
+                android:id="@+id/dfu_progress"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:max="100"
+                android:indeterminate="false"
+                style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"/>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/to_dfu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To Dfu Mode"
+                style="@style/TestButton"/>
+            <CheckBox
+                android:id="@+id/instant_dfu"
+                android:background="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:foreground="#1d1b1b"
+                android:text="Instant Dfu"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/sport_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sport Data"
+            style="@style/TestButton"/>
+        <Button
+            android:id="@+id/sync_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sync Time"
+            style="@style/TestButton"/>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/vibrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vibrate"
+                android:labelFor="@+id/vibrate_times"
+                style="@style/TestButton"/>
+            <EditText
+                android:textColor="@color/white"
+                android:id="@+id/vibrate_times"
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="1"
+                android:inputType="number"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Version"
+            style="@style/TestButton"/>
+        <Button
+            android:id="@+id/quit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quit"
+            style="@style/TestButton"/>
+        <Button
+            android:id="@+id/start_once_heart_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Once Heart"
+            style="@style/TestButton"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/read_once_heart_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Read Heart Rate"
+                style="@style/TestButton"/>
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/heart_rate_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="---"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/start_keep_fit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Keep Fit"
+            style="@style/TestButton"/>
+        <Button
+            android:id="@+id/stop_heart_or_keep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop Heart or KeepFit"
+            style="@style/TestButton"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/log_raw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log RawData"
+                style="@style/TestButton"/>
+            <Button
+                android:id="@+id/dump_raw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dump RawData"
+                style="@style/TestButton"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/remove_raw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Del RawData"
+            style="@style/TestButton"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/mock_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mock Sport Data"
+                style="@style/TestButton"/>
+            <Button
+                android:id="@+id/remove_mock_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="remove Mock Data"
+                style="@style/TestButton"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/compute_sport_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compute Sport Data"
+            style="@style/TestButton"/>
+        <Button
+            android:id="@+id/stop_output"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop All Output"
+            style="@style/TestButton"/>
+        <Button
+            android:id="@+id/read_heart_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sync Heart"
+            style="@style/TestButton"/>
+        <Button
+            android:id="@+id/show_fitness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="add waiting"
+            style="@style/TestButton"/>
+        <Button
+            android:id="@+id/log_wait_block"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log WaitBLock"
+            style="@style/TestButton"/>
+        <Button
+            android:id="@+id/log_block"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log BongBlock"
+            style="@style/TestButton"/>
+        <Button
+            android:id="@+id/remove_wait_block"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove WaitBlock"
+            style="@style/TestButton"/>
+        <Button
+            android:id="@+id/read_battery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Read Battery"
+            style="@style/TestButton"/>
+        <Button
+            android:id="@+id/log_curve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log Curve"
+            style="@style/TestButton"/>
+        <Button
+            android:id="@+id/log_gps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log Gps"
+            style="@style/TestButton"/>
+        <Button
+            android:id="@+id/gps_sport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gps Sport Test"
+            style="@style/TestButton"/>
+    </LinearLayout>
+</ScrollView>

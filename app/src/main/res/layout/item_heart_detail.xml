@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="42dp">
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:textSize="16dp"
+        android:id="@+id/tv_heart_range"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="--"
+        android:layout_centerVertical="true"
+        style="@style/CommonText.ItemBlack"/>
+    <TextView
+        android:textSize="13dp"
+        android:textColor="@color/report_sport_x_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="@string/heart_rate_sport_unit"
+        android:layout_toRightOf="@+id/tv_heart_range"
+        android:layout_centerVertical="true"
+        style="@style/CommonText.ItemBlack"/>
+    <TextView
+        android:textSize="14dp"
+        android:textColor="@color/report_sport_x_text"
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:text="--"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        style="@style/CommonText.ItemBlack"/>
+    <ImageView
+        android:background="@color/user_item_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

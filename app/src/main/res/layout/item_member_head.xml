@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical"
+    android:tag="layout/item_member_head_0"
+    android:background="@color/white_f2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="14dp"
+            android:gravity="center"
+            android:id="@+id/tv_search"
+            android:background="@color/white_f0"
+            android:paddingLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/group_search_name"
+            android:drawableStart="@drawable/img_search"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
+        <View style="@style/DividerLine"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/ll_new"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp">
+        <View style="@style/DividerLine"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:text="@string/group_new"
+                android:layout_weight="1"/>
+            <TextView
+                android:textSize="14dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:id="@+id/new_count"
+                android:background="@drawable/circle_red_bg"
+                android:visibility="gone"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginRight="5dp"
+                android:maxEms="3"
+                android:singleLine="true"/>
+            <cn.ginshell.bong.ui.view.IconTextView
+                android:textColor="@color/black"
+                android:layout_marginLeft="5dp"
+                android:text="@string/icon_forward"
+                android:layout_alignParentRight="true"
+                style="@style/ItemIconTextRight"/>
+        </LinearLayout>
+        <View style="@style/DividerLine"/>
+    </LinearLayout>
+    <TextView
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/group_all_member"/>
+    <View style="@style/DividerLine"/>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical"
+    android:background="@drawable/bg_corner_white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/run_train_icon_locked"/>
+    <TextView
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/run_train_achieve_dialog"
+        android:lineSpacingExtra="5dp"/>
+    <View
+        android:background="#cccccc"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:textSize="20dp"
+        android:textColor="@color/train_record_bg"
+        android:gravity="center"
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="好"/>
+</LinearLayout>

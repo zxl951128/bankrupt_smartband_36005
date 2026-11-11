@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:tag="layout/item_position_0"
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:layout_marginLeft="15dp">
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:id="@+id/position_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="华东跑渣群"
+        android:singleLine="true"
+        android:layout_toLeftOf="@+id/icon_select"/>
+    <cn.ginshell.bong.ui.view.IconTextView
+        android:textSize="20dp"
+        android:textColor="@color/green_1"
+        android:gravity="center"
+        android:id="@+id/icon_select"
+        android:visibility="invisible"
+        android:layout_width="@dimen/common_title_width"
+        android:layout_height="match_parent"
+        android:text="@string/icon_finish"
+        android:layout_alignParentRight="true"/>
+    <View
+        android:id="@+id/line"
+        android:layout_alignParentBottom="true"
+        style="@style/DividerLine"/>
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical"
+    android:tag="layout/fragment_login_register_0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextureView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/video_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        xmlns:ns1="http://schemas.android.com/apk/res-auto" 
+        ns1:layout_constraintBottom_toBottomOf="parent"
+        xmlns:ns2="http://schemas.android.com/apk/res-auto" 
+        ns2:layout_constraintLeft_toLeftOf="parent"
+        xmlns:ns3="http://schemas.android.com/apk/res-auto" 
+        ns3:layout_constraintRight_toRightOf="parent"
+        xmlns:ns4="http://schemas.android.com/apk/res-auto" 
+        ns4:layout_constraintTop_toTopOf="parent"/>
+    <Button
+        android:textColor="@color/white"
+        android:id="@+id/login"
+        android:tag="binding_1"
+        android:background="@drawable/bg_stroke_red"
+        android:layout_marginBottom="48dp"
+        android:text="@string/set_login"
+        xmlns:ns5="http://schemas.android.com/apk/res-auto" 
+        ns5:layout_constraintBottom_toBottomOf="parent"
+        xmlns:ns6="http://schemas.android.com/apk/res-auto" 
+        ns6:layout_constraintLeft_toLeftOf="parent"
+        xmlns:ns7="http://schemas.android.com/apk/res-auto" 
+        ns7:layout_constraintRight_toLeftOf="@+id/register"
+        style="@style/SmallButton"/>
+    <Button
+        android:textColor="@color/color_state_green_text"
+        android:id="@+id/register"
+        android:tag="binding_2"
+        android:background="@drawable/bg_stroke_green"
+        android:text="@string/set_register"
+        xmlns:ns8="http://schemas.android.com/apk/res-auto" 
+        ns8:layout_constraintBaseline_toBaselineOf="@+id/login"
+        xmlns:ns9="http://schemas.android.com/apk/res-auto" 
+        ns9:layout_constraintLeft_toRightOf="@+id/login"
+        xmlns:ns10="http://schemas.android.com/apk/res-auto" 
+        ns10:layout_constraintRight_toRightOf="parent"
+        style="@style/SmallButton"/>
+</android.support.constraint.ConstraintLayout>

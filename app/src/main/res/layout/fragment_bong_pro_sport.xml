@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:background="@color/black_bg_80"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <cn.ginshell.bong.ui.view.IconTextView
+            android:textSize="160dp"
+            android:textColor="@color/bong_color"
+            android:layout_gravity="end|top"
+            android:id="@+id/activity_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="-40dp"
+            android:text="@string/icon_step"
+            android:alpha="0.2"/>
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/bongpro_title"/>
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="61dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="15dp"
+                layout="@layout/bongpro_top_value"/>
+            <include layout="@layout/bongpro_column"/>
+            <ViewSwitcher
+                android:id="@+id/error_normal_switcher"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:background="@color/bong_pro_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1">
+                    <ViewSwitcher
+                        android:id="@+id/bottom_data_view_switcher"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ViewStub
+                                android:id="@+id/table_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"/>
+                            <FrameLayout
+                                android:id="@+id/chart_content"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_above="@+id/table_view"
+                                android:layout_alignParentTop="true"/>
+                        </RelativeLayout>
+                        <include layout="@layout/bongpro_loading"/>
+                    </ViewSwitcher>
+                    <include layout="@layout/bongpro_tip"/>
+                </LinearLayout>
+                <include layout="@layout/bongpro_load_failure"/>
+            </ViewSwitcher>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

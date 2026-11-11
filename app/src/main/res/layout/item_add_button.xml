@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/btn_value"
+        android:clickable="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/alarm_add"
+        style="@style/StyledButtonGreen"/>
+</RelativeLayout>
